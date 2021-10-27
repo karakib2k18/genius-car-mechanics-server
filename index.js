@@ -38,7 +38,7 @@ async function run() {
       const service = await servicesCollection.findOne(query);
       res.send(service);
     });
-    
+
     //DELETE API
     app.delete("/services/:id", async (req, res) => {
       const id = req.params.id;
@@ -64,7 +64,8 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("Running genius to the server");
 });
-
+//DB_USER=carservice
+// DB_PASS=26z8goupj6KI3bYW
 app.listen(port, () => {
   console.log("listen to port RAKIB", port);
 });
