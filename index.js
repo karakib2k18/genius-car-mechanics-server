@@ -67,5 +67,5 @@ app.get("/", (req, res) => {
 //DB_USER=carservice
 // DB_PASS=26z8goupj6KI3bYW
 app.listen(port, () => {
-  console.log("listen to port RAKIB", port);
+  console.log("listen to port genius to the server", port);
 });
