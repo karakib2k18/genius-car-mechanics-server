@@ -64,6 +64,9 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("Running genius to the server");
 });
+app.get("/hello", (req, res) => {
+  res.send("THIS IS FOR HELLO");
+});
 //DB_USER=carservice
 // DB_PASS=26z8goupj6KI3bYW
 app.listen(port, () => {
